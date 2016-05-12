@@ -76,6 +76,15 @@ namespace COMP2007_S2016_lessonB {
         protected global::System.Web.UI.WebControls.TextBox txtAge;
         
         /// <summary>
+        /// vldAge control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator vldAge;
+        
+        /// <summary>
         /// btnSubmit control.
         /// </summary>
         /// <remarks>

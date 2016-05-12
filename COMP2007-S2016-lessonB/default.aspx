@@ -20,7 +20,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Brand</a>
+                <a class="navbar-brand" href="#">Alex Andriishyn</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -44,15 +44,16 @@
                 <form class="form" id="form1" runat="server">
                     <div class="form-group">
                         <asp:Label CssClass="control-label" ID="lblFirstName" runat="server" Text="First name: "></asp:Label>
-                        <asp:TextBox CssClass="form-control" ID="txtFirstName" runat="server"></asp:TextBox>
+                        <asp:TextBox CssClass="form-control" ID="txtFirstName" runat="server" required="required" CausesValidation="True"></asp:TextBox>
                     </div>
                     <div class="form-group">
                         <asp:Label CssClass="control-label" ID="lblLastName" runat="server" Text="Last name: "></asp:Label>
-                        <asp:TextBox CssClass="form-control" ID="txtLastName" runat="server"></asp:TextBox>
+                        <asp:TextBox CssClass="form-control" ID="txtLastName" runat="server" required="required" CausesValidation="True"></asp:TextBox>
                     </div>
                     <div class="form-group">
                         <asp:Label CssClass="control-label" ID="lblAge" runat="server" Text="Age: "></asp:Label>
-                        <asp:TextBox CssClass="form-control" ID="txtAge" runat="server"></asp:TextBox>
+                        <asp:TextBox CssClass="form-control" ID="txtAge" runat="server" required="required" CausesValidation="True"></asp:TextBox>
+                        <asp:RangeValidator CssClass="alert alert-danger pull-right" ID="vldAge" runat="server" ErrorMessage="Please enter your real age!" ControlToValidate="txtAge" MaximumValue="120" MinimumValue="1"></asp:RangeValidator>
                     </div>
                     <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                     <br />
