@@ -53,7 +53,7 @@
                     <div class="form-group">
                         <asp:Label CssClass="control-label" ID="lblAge" runat="server" Text="Age: "></asp:Label>
                         <asp:TextBox CssClass="form-control" ID="txtAge" runat="server" required="required" CausesValidation="True"></asp:TextBox>
-                        <asp:RangeValidator CssClass="alert alert-danger pull-right" ID="vldAge" runat="server" ErrorMessage="Please enter your real age!" ControlToValidate="txtAge" MaximumValue="120" MinimumValue="1" Type="Integer"></asp:RangeValidator>
+                        <asp:RangeValidator CssClass="text-danger pull-right" ID="vldAge" runat="server" ErrorMessage="Please enter your real age!" ControlToValidate="txtAge" MaximumValue="120" MinimumValue="1" Type="Integer"></asp:RangeValidator>
                     </div>
                     <asp:Button CssClass="btn btn-primary" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                     <br />
